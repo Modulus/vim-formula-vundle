@@ -3,4 +3,4 @@ git clone https://github.com/VundleVim/Vundle.vim.git:
   git.latest:
     - name: https://github.com/VundleVim/Vundle.vim.git
     - rev: 'HEAD'
-    - target: {{vim.sharedir}}/Vundle.vim
+    - target: {{vim.share_dir}}/Vundle.vim
