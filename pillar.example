@@ -29,10 +29,10 @@ vim:
     shiftwidth: 8
     nowrap:
     swapsync: ''
-    nocompatible: 
+    nocompatible:
     paste:
+    filetype: off
 
 
   lets:
-    &colorcolumn: join(range(121,121),",") 
-
+    &colorcolumn: join(range(121,121),",")
