@@ -9,7 +9,6 @@ git clone https://github.com/VundleVim/Vundle.vim.git:
   git.latest:
     - name: https://github.com/VundleVim/Vundle.vim.git
     - rev: 'HEAD'
-<<<<<<< HEAD
     - target: {{vim.share_dir}}/bundle/Vundle.vim
     - require:
       - sls: vim
@@ -22,6 +21,13 @@ git clone https://github.com/VundleVim/Vundle.vim.git:
     - makedirs: True
     - require:
       - git: git clone https://github.com/VundleVim/Vundle.vim.git
-=======
-    - target: {{vim.share_dir}}/Vundle.vim
->>>>>>> a3c72bc17ea3b538d094a377e5a26c2696255ed6
+
+
+# install plugins:
+#   cmd.run:
+#     - name: vim +PluginInstall +qall
+#     - require:
+#       - git: git clone https://github.com/VundleVim/Vundle.vim.git
+#       - file: /etc/vim/vimrc.local
+#       - sls: vim
+#       - sls: vim.salt
